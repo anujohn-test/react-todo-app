@@ -31,7 +31,6 @@ class StateProvider extends Component {
   }
 
   addNew(text) {
-    console.log('addnew fn1', text); //tan
     let updatedList = addToList(this.state.list, { text, completed: false });
 
     this.setState({ list: updatedList });
@@ -42,7 +41,6 @@ class StateProvider extends Component {
   }
 
   changeStatus(itemId, completed) {
-    console.log('changeStatus fn1', itemId); //tan
     const updatedList = updateStatus(this.state.list, itemId, completed);
 
     this.setState({ list: updatedList });

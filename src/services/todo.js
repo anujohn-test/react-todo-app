@@ -58,7 +58,6 @@ function getNextId() {
  * @return {Array}
  */
 export function addToList(list, data) {
-  console.log('addToList fn1', data); //tan
   let item = Object.assign(
     {
       id: getNextId()
